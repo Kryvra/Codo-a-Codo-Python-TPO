@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles/st_contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merienda" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/737b7fa1a0.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="imgs/logo.png">
+    <title>TPO - Contact</title>
+</head>
+
+<body>
+    <div class="mybody">
+        <div id="portrait">
+            <div class="sitename">
+                <a href="index.html"><img class="logo" src="imgs/logo.png"> Le Bon Appétit</a>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a class="selecticon" href="index.html"><i class="fa-solid fa-house-chimney"></i> El Restaurante</a>
+                </li>
+                <li><a class="selecticon" href="location.html"><i class="fa-solid fa-map"></i> Ubicación</a></li>
+                <li><a class="selecticon" href="contact.html"><i class="fa-solid fa-feather"></i> Contáctanos</a></li>
+            </ul>
+        </nav>
+        <div id="main">
+            <div id="title">Formulario de Contacto:</div>
+            <div id="data">
+                <p>Si quiere informarse sobre el restaurante, reservar o cancelar una mesa, utilice este formulario de
+                    contacto o llámenos al número de teléfono (011) 4xxx-xxxx</p>
+            </div>
+            <div id="form">
+                <form id="myform">
+                    <div>
+                        <input type="text" name="name" id="name" placeholder="Ingrese su nombre">
+                        <label for="name">Nombre: </label>
+                    </div>
+                    <div>
+                        <input type="email" name="email" id="email" placeholder="ejemplo@dominio.com">
+                        <label for="email">Dirección de e-mail: </label>
+                    </div>
+                    <div>
+                        <select id="subject" name="subject">
+                            <option value hidden> --- Elija una opción
+                                ---------------------------------------------------------------------------------------------------------------------------------------------------------------
+                            </option>
+                            <option value="1">Escribir un comentario</option>
+                            <option value="2">Hacer una reserva</option>
+                            <option value="3">Cancelar una reserva</option>
+                        </select>
+                        <label for="subject">Asunto: </label>
+                    </div>
+                    <div>
+                        <textarea rows="5" name="mssg" id="mssg" placeholder="Ingrese su mensaje"></textarea>
+                        <label for="mssg">Mensaje: </label>
+                    </div>
+                    <div>
+                        <input id="send" type="submit" value="Enviar" onclick="return SendForm();">
+                    </div>
+                </form>
+                <div id="error"></div>
+            </div>
+            <div id="notes">
+                <p><i class="fa-solid fa-circle-exclamation"></i> En caso de realizar o cancelar una reserva, asegúrese
+                    de ingresar la fecha y horario.</p>
+                <p><i class="fa-solid fa-circle-exclamation"></i> Toda reserva debe realizarse con un tiempo mínimo de
+                    24 hs.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/fom_contact.js"></script>
+</body>
+
+</html>
